@@ -1,0 +1,81 @@
+name: Bug report
+description: Report a missing or wrong ore outline, or any other problem
+title: "[Bug]: "
+labels: ["Bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve OutlinedOres! Please fill in the fields below.
+        A close-up screenshot is the most helpful thing you can give us.
+
+  - type: dropdown
+    id: bug-type
+    attributes:
+      label: What kind of bug is it?
+      options:
+        - Missing outline
+        - Wrong outline color
+        - Outline looks cut off or misaligned
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: pack-variant
+    attributes:
+      label: Which version of the pack?
+      options:
+        - Vanilla GTNH
+        - Modernity
+    validations:
+      required: true
+
+  - type: input
+    id: affected-item
+    attributes:
+      label: Which ore is affected?
+      description: The name of the ore, and the mod it comes from if you know.
+      placeholder: "e.g. Chalcopyrite Ore (GregTech)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: What did you expect to see, and what do you see instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag and drop an image into this box.
+    validations:
+      required: false
+
+  - type: input
+    id: pack-version
+    attributes:
+      label: OutlinedOres version
+      placeholder: "e.g. v2.1"
+    validations:
+      required: true
+
+  - type: input
+    id: gtnh-version
+    attributes:
+      label: GTNH version
+      placeholder: "e.g. 2.8.4"
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Other resource packs in use (and their order), shaders, and so on.
+    validations:
+      required: false
