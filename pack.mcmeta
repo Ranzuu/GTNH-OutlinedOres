@@ -7,7 +7,7 @@
     "schema": 1,
     "pack_name": "GTNH-OutlinedOres",
     "pack_version": "2.1",
-    "pack_game_version": "2.9.X",
+    "pack_game_version": "2.9.X;2.10.X",
     "source": {
       "type": "github_releases",
       "owner": "Ranzuu",
